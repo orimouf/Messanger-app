@@ -26,7 +26,7 @@ app.get('/mybot', function (req, res) {
 	res.send('Wrong token!');
 });
 
-const token = "<EAAJPrRuZAKwQBO3o5d7QrwuLp8X3r7tBH71sEj8YvIduqDR5W4DUM2kRCF9k3oW0cFNaB56ZAedeJsJFYG5ZBV2L2hOfAsz9irZCSiP8j3sxgv8WhASyrylmmMi64ZAZArVfbCkR5H2WqSH7ltJKOCsHj7OZC6guCJPY5hpM6nQqCCHnjAcLBjQMi3LIOZC0ZC8HwynIFMH6gzFOBqGs60wZDZD>";
+const token = "EAAJPrRuZAKwQBO3o5d7QrwuLp8X3r7tBH71sEj8YvIduqDR5W4DUM2kRCF9k3oW0cFNaB56ZAedeJsJFYG5ZBV2L2hOfAsz9irZCSiP8j3sxgv8WhASyrylmmMi64ZAZArVfbCkR5H2WqSH7ltJKOCsHj7OZC6guCJPY5hpM6nQqCCHnjAcLBjQMi3LIOZC0ZC8HwynIFMH6gzFOBqGs60wZDZD";
 app.post('/webhook/', function(req, res) {
     var messaging_events = req.body.entry[0].messaging;
     for (var i = 0; i < messaging_events.length; i++) {
